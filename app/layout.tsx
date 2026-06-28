@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "LEHETRE — Lead The Trend | O2O Marketing Agency",
   description: "Where Digital Strategy Meets Live Experiences. LEHETRE delivers measurable O2O marketing — from performance campaigns to world-class event production.",
   keywords: ["O2O marketing", "event management", "digital marketing", "Vietnam", "LEHETRE"],
+  icons: {
+    icon: "/images/logo/favicon.jpg",
+    apple: "/images/logo/favicon.jpg",
+  },
   openGraph: {
     title: "LEHETRE — Lead The Trend",
     description: "O2O Marketing Agency — Digital Strategy + Live Experiences",

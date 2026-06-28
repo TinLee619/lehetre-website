@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE } from "@/app/lib/data";
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10">
         {/* Brand */}
         <div>
-          <span className="font-logo text-orange text-xl tracking-widest">LEHETRE</span>
+          <Image src="/images/logo/logo.jpg" alt="LEHETRE" width={140} height={50} className="h-9 w-auto" />
           <p className="text-muted text-sm mt-3 leading-relaxed">
             Lead the Trend, Ignite the Moment.<br />
             Where Digital Strategy Meets Live Experiences.
