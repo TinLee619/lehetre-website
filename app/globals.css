@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg:           #0D0D0D;
+  --color-surface:      #161616;
+  --color-surface2:     #1E1E1E;
+  --color-orange:       #FF5500;
+  --color-orange-dark:  #CC4400;
+  --color-muted:        #A0A0A0;
+  --color-divider:      #2A2A2A;
+
+  --font-display:  "Bebas Neue", sans-serif;
+  --font-logo:     "Orbitron", sans-serif;
+  --font-body:     "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #FFFFFF;
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+.glow-orange {
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.35);
+}
+
+.card-orange {
+  background: #161616;
+  border: 1px solid #FF5500;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.card-orange::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #FF5500 0px, #FF5500 2px,
+    transparent 2px, transparent 8px
+  );
+  border-radius: 0 0 8px 0;
+  opacity: 0.5;
+}
+
+.section-watermark {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  font-family: var(--font-bebas), sans-serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  color: white;
+  opacity: 0.04;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.badge-orange {
+  display: inline-block;
+  background: #FF5500;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.bg-diagonal {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 85, 0, 0.025) 10px,
+    rgba(255, 85, 0, 0.025) 11px
+  );
+}
